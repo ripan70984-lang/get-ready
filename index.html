@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="rip2.jpg" type="image/x-icon">
+  <title>HUD Homes – Listings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background:#000;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animate-up {
+      animation: slideUp 0.9s ease-out forwards;
+      opacity: 0;
+    }
+
+    
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.4s; }
+    .delay-4 { animation-delay: 0.5s; }
+    .delay-5 { animation-delay: 0.6s; }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+        url('rip2.jpg')
+        center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .logo {
+      width: 160px;
+      margin-bottom: 28px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .headline {
+      font-size: 34px;
+      font-style:italic;
+      font-weight: 800;
+      color:#39c0e0;
+      line-height:1.25;
+      margin-bottom:22px;
+    }
+
+    .subtext {
+      font-size: 16px;
+      opacity:.9;
+      margin-bottom:28px;
+      max-width:520px;
+      font-family:Luminary, Fantasy;
+    }
+
+    .search-btn {
+      background:#c99a21;
+      color:#fff;
+      border:none;
+      padding:16px 26px;
+      border-radius:6px;
+      font-size:12px;
+      font-weight:700;
+      cursor:pointer;
+      margin-bottom:22px;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .small-text {
+      font-size:14px;
+      opacity:.85;
+      margin-bottom:26px;
+    }
+
+    .cta {
+      background:#19a83e;
+      padding:16px 34px;
+      border-radius:6px;
+      color:#fff;
+      font-weight:800;
+      text-decoration:none;
+      font-size:11px;
+      display:inline-block;
+    }
+
+    @media (max-width: 480px) {
+      .headline { font-size: 26px; }
+      .search-btn, .cta { width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="logo animate-up delay-1">
+      <img src="pop.jpg" alt="HUD Homes Logo" />
+    </div>
+
+    <h1 class="headline animate-up delay-2">
+      Bad Credit, Low Income<br />
+      No Down Options Available
+    </h1>
+
+    <p class="subtext animate-up delay-3">
+      Exceptional Properties “Homes that Match” Starting at Affordable prices
+    </p>
+
+    <a href="https://www.chd93jds.com/CCKTZ52/3QQG7/" class="search-btn animate-up delay-4">
+      🔍 SEARCH FOR AVAILABLE HOMES
+    </a>
+
+    <p class="small-text animate-up delay-5">
+      Get Free Listings. Fast, Reliable, Affordable.
+    </p>
+
+    <a class="cta animate-up delay-5" href="https://www.chd93jds.com/CCKTZ52/38TLSX/">
+      GET STARTED NOW
+    </a>
+  </section>
+  
+  <footer>
+    <p style="text-align: center; color:white; margin:20px;" >&copy; <span id="year"></span> 2026 Rental.Idea. All rights reserved. <br> Powered By DY</p>
+</footer>
+
+</body>
+</html>
