@@ -1,157 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="rip2.jpg" type="image/x-icon">
-  <title>HUD Homes – Listings</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>House For Rent</title>
 
-    body {
-      background:#000;
-    }
+<style>
+*{
+  box-sizing:border-box;
+}
 
-    @keyframes slideUp {
-      from {
-        transform: translateY(40px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#e9e9e9;
+}
 
-    .animate-up {
-      animation: slideUp 0.9s ease-out forwards;
-      opacity: 0;
-    }
+.container{
+  max-width:320px;
+  margin:auto;
+  background:#fffff;
+  text-align:center;
+}
 
-    
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.3s; }
-    .delay-3 { animation-delay: 0.4s; }
-    .delay-4 { animation-delay: 0.5s; }
-    .delay-5 { animation-delay: 0.6s; }
+.title{
+  color:#e60000;
+  font-size:26px;
+  font-weight:bold;
+  padding:14px 10px 8px;
+}
 
-    .hero {
-      min-height: 100vh;
-      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
-        url('rip2.jpg')
-        center/cover no-repeat;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-    }
+.hero img{
+  width:100%;
+  display:block;
+}
 
-    .logo {
-      width: 160px;
-      margin-bottom: 28px;
-    }
+.green-text{
+  color:#178a2f;
+  font-weight:bold;
+  font-size:18px;
+  padding:18px 12px 8px;
+}
 
-    .logo img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 4px;
-    }
+.blue-text{
+  color:#2b2bbd;
+  font-size:12px;
+  padding:0 18px 12px;
+  line-height:1.5;
+  text-weight:50px;
+}
 
-    .headline {
-      font-size: 34px;
-      font-style:italic;
-      font-weight: 800;
-      color:#39c0e0;
-      line-height:1.25;
-      margin-bottom:22px;
-    }
+.btn{
+  display:block;
+  width:85%;
+  margin:14px auto;
+  padding:14px 10px;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:6px;
+}
 
-    .subtext {
-      font-size: 16px;
-      opacity:.9;
-      margin-bottom:28px;
-      max-width:520px;
-      font-family:Luminary, Fantasy;
-    }
+.btn-red{
+  background:#ff0000;
+  color:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
 
-    .search-btn {
-      background:#c99a21;
-      color:#fff;
-      border:none;
-      padding:16px 26px;
-      border-radius:6px;
-      font-size:12px;
-      font-weight:700;
-      cursor:pointer;
-      margin-bottom:22px;
-      text-decoration:none;
-      display:inline-block;
-    }
+.btn-yellow{
+  background:#c9c400;
+  color:#fff;
+}
 
-    .small-text {
-      font-size:14px;
-      opacity:.85;
-      margin-bottom:26px;
-    }
+.icon{
+  margin-right:6px;
+}
 
-    .cta {
-      background:#19a83e;
-      padding:16px 34px;
-      border-radius:6px;
-      color:#fff;
-      font-weight:800;
-      text-decoration:none;
-      font-size:11px;
-      display:inline-block;
-    }
-
-    @media (max-width: 480px) {
-      .headline { font-size: 26px; }
-      .search-btn, .cta { width:100%; }
-    }
-  </style>
+</style>
 </head>
+
 <body>
 
-  <section class="hero">
-    <div class="logo animate-up delay-1">
-      <img src="pop.jpg" alt="HUD Homes Logo" />
-    </div>
+<div class="container">
 
-    <h1 class="headline animate-up delay-2">
-      Bad Credit, Low Income<br />
-      No Down Options Available
-    </h1>
+  <div class="title">House For Rent</div>
 
-    <p class="subtext animate-up delay-3">
-      Exceptional Properties “Homes that Match” Starting at Affordable prices
-    </p>
+  <div class="hero">
+    <img src="br.jpg" alt="House">
+  </div>
 
-    <a href="https://www.chd93jds.com/CCKTZ52/3QQG7/" class="search-btn animate-up delay-4">
-      🔍 SEARCH FOR AVAILABLE HOMES
-    </a>
+  <div class="green-text">
+    VIEW HOMES FOR RENT IN YOUR AREA NOW!
+  </div>
 
-    <p class="small-text animate-up delay-5">
-      Get Free Listings. Fast, Reliable, Affordable.
-    </p>
+  <div class="blue-text">
+    Search Homes Around Your Area by Pressing View Listings & Adding Zip code. If You Looking For Home Or Apartment In Your Area!
+  </div>
 
-    <a class="cta animate-up delay-5" href="https://www.chd93jds.com/CCKTZ52/38TLSX/">
-      GET STARTED NOW
-    </a>
-  </section>
-  
-  <footer>
-    <p style="text-align: center; color:white; margin:20px;" >&copy; <span id="year"></span> 2026 Rental.Idea. All rights reserved. <br> Powered By DY</p>
-</footer>
+  <a href="https://www.chd93jds.com/CCKTZ52/3QQG7/" class="btn btn-red">
+    🏠 SEE LISTING HERE
+  </a>
+
+  <a href="https://www.chd93jds.com/CCKTZ52/4B269N/" class="btn btn-yellow">
+    ➜ SEARCH FOR AVAILABLE HOME
+  </a>
+
+</div>
 
 </body>
 </html>
